@@ -5,11 +5,14 @@ Here we deposited three versions of ChromStruct:
 - ## ChromStruct 3.1
   In this first version we developed and tested a reconstruction technique that does not require translating contacts into distances, thus avoiding a number of related drawbacks. Also, we introduce a geometrical chromatin chain model that allows us to include sound biochemical and biological constraints in the problem. This model can be scaled at different genomic resolutions, where the structures of the coarser models are influenced by the reconstructions at finer resolutions. The search in the solution space is then performed by a classical simulated annealing, where the model is evolved efficiently through quaternion operators. The presence of appropriate constraints permits the less reliable data to be overlooked, so the result is a set of plausible chromatin configurations compatible with both the data and the prior knowledge. [1]
   
-- ChromStruct 4.2 In this improved version we propose a multiscale chromatin model where the chromatin fiber is suitably partitioned at each scale. The partial structures are estimated independently, and connected to rebuild the whole fiber. Our score function consists of a data-fit part and a penalty part, balanced automatically at each scale and each subchain. The penalty part enforces soft geometric constraints. As many different structures can fit the data, our sampling strategy produces a set of solutions with similar scores. The procedure contains a few parameters, independent of both the scale and the genomic segment treated. [2,3]
+- ## ChromStruct 4.2
+  In this improved version we propose a multiscale chromatin model where the chromatin fiber is suitably partitioned at each scale. The partial structures are estimated independently, and connected to rebuild the whole fiber. Our score function consists of a data-fit part and a penalty part, balanced automatically at each scale and each subchain. The penalty part enforces soft geometric constraints. As many different structures can fit the data, our sampling strategy produces a set of solutions with similar scores. The procedure contains a few parameters, independent of both the scale and the genomic segment treated. [2,3]
   
-- ChromStruct 4.3 In this version we introduce the possibility of integrating HI-C data with histone mark CHIP-seq, CTCF CHIP-seq and RNA-seq data, browsing between different resolution levels, from few kilobases up to Mega-bases [4]. 
+- ## ChromStruct 4.3
+  In this version we introduce the possibility of integrating HI-C data with histone mark CHIP-seq, CTCF CHIP-seq and RNA-seq data, browsing between different resolution levels, from few kilobases up to Mega-bases [4]. 
 
-Refernces:
+
+### Refernces:
 
 [1] Caudai, C., Salerno, E., Zoppè, M. et al. Inferring 3D chromatin structure using a multiscale approach based on quaternions. BMC Bioinformatics 16, 234 (2015). https://doi.org/10.1186/s12859-015-0667-0
 
